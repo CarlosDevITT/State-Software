@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SomeComponent = () => {
-  return <div>some Component 2 </div>;
+  return <div> hello word ! </div>;
 };
 
 export default SomeComponent;
