@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>State Softwares</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
+">  
+</head>
+<body>
+  <div class="container" >
+    <div class="menu">
+        <div class="logo">
+      	State<span>Soft</span>
+      </div>
+      <ul>
+        <li><i class="fa-solid fa-house"></i><a href="./pages/home/home.html" >HOME</a></li>
+      	<li><i class="fa-solid fa-cart-shopping"></i><a href="./index.html" >SERVIÇOS</a></li>
+      	<li><i class="fa-solid fa-shop"></i><a href="/./pages/produtos/Produtos.html" >PRODUTOS</a></li>
+      </ul>
+
+      <ul>
+      	 <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/statesoft_" target="_blank">INSTAGRAM</a></li>
+      	<li><i class="fa-brands fa-facebook"></i>FACEBOOK</li>
+      	<li><i class="fa-brands fa-tiktok"></i>TIKTOK</li>
+			</ul>
+			
+			<ul>
+				<li><i class="fa-solid fa-qrcode"></i><a href="pages/mystate/mystate.html">[ MY STATE ]</a></li>
+			</ul>
+		
+
+    </div>  
+
+    <div class="center">
+    	<div class="search">
+    		<div class="form">
+    			<i class="fa-solid fa-magnifying-glass"></i>
+    			<input type="text"placeholder="Search....">
+    			<button>Search</button>
+    		</div>
+        </div>
+
+   <h2>PRESTAÇÃO DE SERVIÇOS</h2>  
+  <div class="list">
+     <div class="item" data-key="1">
+        <div class="img">
+           	<img src="" alt="meu avatar">         	
+        </div>
+	     <div class="content">
+		      <div class="title"> Consultoria em TI: </div>
+		      <div class="des">
+	            Oferecer consultoria para empresas que desejam otimizar seus processos de TI, escolher as melhores tecnologias e implementar soluções personalizadas.
+	      </div>
+	      <div class="price">$ 150</div>
+	      <input type="number" class="count" min="1" value="1">
+	      <button class="add" > ADD No carrinho</button>
+	      <button class="remove" onclick="removeItem(this.parentNode.getAttribute('data-key'))"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+     </div>
+     <div class="item" data-key="2">
+        <div class="img">
+           	<img src="" alt="meu avatar">         	
+        </div>
+	     <div class="content">
+		      <div class="title"> Segurança da informação: </div>
+		      <div class="des">
+	            Realizar auditorias de segurança, implementar soluções de segurança, como firewalls e antivírus, e oferecer treinamento para os funcionários sobre segurança da informação.
+	      </div>
+	      <div class="price">$ 250</div>
+	      <input type="number" class="count" min="1" value="1">
+	      <button class="add" > ADD No carrinho</button>
+	      <button class="remove" onclick="removeItem(this.parentNode.getAttribute('data-key'))"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+     </div>
+
+     <div class="item" data-key="3">
+        <div class="img">
+           	<img src="" alt="meu avatar">         	
+        </div>
+	     <div class="content">
+		      <div class="title"> Suporte técnico: </div>
+		      <div class="des">
+	            Oferecer suporte técnico remoto ou presencial para empresas e usuários individuais. Isso inclui resolução de problemas em computadores, redes, softwares e dispositivos móveis.
+	      </div>
+	      <div class="price">$ 50,00 </div>
+	      <input type="number" class="count" min="1" value="1">
+	      <button class="add" > ADD No carrinho</button>
+	    <button class="remove" onclick="removeItem(this.parentNode.getAttribute('data-key'))"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+     </div>
+
+     <div class="item" data-key="4">
+        <div class="img">
+           	<img src="" alt="meu avatar">         	
+        </div>
+	     <div class="content">
+		      <div class="title"> Desenvolvimento de software:</div>
+		      <div class="des">
+	           Desenvolver softwares personalizados para atender às necessidades específicas de cada cliente, como aplicativos web, mobile e sistemas de gestão.
+	      </div>
+	      <div class="price">$ 100 </div>
+	      <input type="number" class="count" min="1" value="1">
+	      <button class="add" > ADD No carrinho</button>
+	      <button class="remove" onclick="removeItem(this.parentNode.getAttribute('data-key'))"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+     </div> 
+  </div>
+ </div>
+    <div class="cart"> 
+			
+    <div class="name">SELECIONAR SERVIÇOS</div>
+
+     <div class="listCart"> 
+				<button class="finalize-purchase" onclick="finalizePurchase()">Finalizar Compra</button>			
+   </div>
+</div> 
+
+ <script src="script.js"></script>
+</body>
