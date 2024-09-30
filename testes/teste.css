@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* Normalize */
+:root{
+     --white: #fff;
+     --light: #eeeded;
+     --blue:  #3b4780;
+}
+body{
+  background-color: var(--blue);
+  font-family: system-ui;
+  
+}
+.container {
+  width: 100%; 
+  max-width: 100%;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: 300px auto 200px; 
+  min-height: 90vh;
+}
+.container .menu{
+  background-color: var(--white);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+.container .center{
+  background-color: var(--light);
+  border-left: 1px solid var(--light);
+  border-right: 1px solid var(--light);
+}
+.container .cart{
+  position: relative;
+  background-color: var(--white);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+ 
+
+/*MENU*/
+.menu .logo{
+  padding: 20px;
+  font-family: 'Lobster', cursive;
+  font-size: xx-large;
+  height: 40px;
+}
+.menu .logo span{
+  color: var(--blue);
+}
+.menu ul{
+  padding:20px 0 20px 20px;
+  list-style: none;
+  border-bottom: 1px solid var(--light);
+  text-decoration: none;
+}
+.menu ul li{
+  padding: 10px 0;
+}
+.menu ul li i{
+  margin-right: 12px;
+}
+.menu ul li.active{
+  color: var(--blue);
+  border-right: 2px solid var(--blue);
+}
+.menu ul li:hover{
+  color: var(--blue);
+  border-right: 2px solid var(--blue);
+}
+.menu ul li a {
+  text-decoration: none;
+}
+/*fim do menu*/
+
+
+/* link que foi visitado */
+a:visited {
+   color: black;
+}
+
+/* mouse over */
+a:hover {
+   color: #000000;
+}
+
+/* link selecionado */
+a:active {
+   color: blue;
+}
+
+/*center*/
+  /*FORM*/
+.center .search{
+  background-color: var(--white);
+  padding: 20px;
+  height: 40px;
+}
+.center .search .form{
+  width: max-content;
+  border: 1px solid var(--light);
+  border-radius: 20px;
+  padding-left: 15px;
+  color: var(--light);
+}
+.center .search .form input{
+  border:none;
+  padding: 0 10px;
+  outline: none;
+  width: 100px; 
+}
+.center .search .form button{
+  border:none;
+  background-color: var(--blue);
+  color: var(--light);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+ /*fim FORM*/
+ .center h2{
+  padding: 20px;
+ }
+.center .list{
+  padding: 0 20px 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.item{
+  background-color:  var(--white);
+  display: grid;
+  grid-template-columns: 30% auto;
+  padding: 10px;
+  column-gap: 20px;
+  border-radius: 20px;
+}
+.item .img img{
+  height: 70px;
+}
+.item .img{
+  background-color:  var(--light);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item .content .title{
+  font-weight: bold;
+}
+.item .content .des{
+  font-size: small;
+  opacity: 0.7;
+  margin-top: 5px;
+
+}
+.item.content .price{
+  color: var(--blue);
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: small;
+  margin-top: 5px;
+}
+.item .count{
+  width: 50px;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 3px 5px;
+  border: 1px solid var(--light);
+  outline: none;
+  margin-top: 5px
+}
+.item .content .add{
+ margin-top: 5px;
+ background-color: var(--blue);
+ color: var(--white);
+ padding: 5px 10px;
+ border:none;
+ border-radius: 10px;
+}
+.item .content .remove{
+  padding: 5px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 10px;
+  display: none;
+}
+/*fim do center*/
+.cart .item{
+  transition: 0,5s;
+  border-bottom: 1px solid var(--light);
+}
+.cart .name{
+  padding: 20px;
+  height: 40px;
+  font-weight: bold;
+  font-size: xx-large;
+  border-bottom: 1px solid var(--light);
+}
+
+.danger{
+  box-shadow: 0 10px 10px var(--blue);
+  transform: translate(0 -10px);
+}
+.cart .add{
+  display: block;
+}
+.cart .remove{
+  display: inline-block!important;
+
+}
+
+/* Estilos para telas pequenas (mobile) */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "menu" "center" "cart";
+  }
+  .container .menu {
+    grid-area: menu;
+  }
+  .container .center {
+    grid-area: center;
+  }
+  .container .cart {
+    grid-area: cart;
+  }
+}
+
+.finalize-purchase{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 20px;
+  border-radius: 30px;
+  background: linear-gradient(to bottom, #4CAF50, #2ECC71);
+  color: #fff;
+}
+.cart .name {
+  font-size: 20px;
+  text-align: center; /* centraliza o texto */
+  color: #333; /* ou qualquer outra cor que você deseje */
+}
