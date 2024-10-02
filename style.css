@@ -23,20 +23,6 @@ body{
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 
-}
-.container .center{
-  background-color: var(--light);
-  border-left: 1px solid var(--light);
-  border-right: 1px solid var(--light);
-}
-.container .cart{
-  position: relative;
-  background-color: var(--white);
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
- 
-
 /*MENU*/
 .menu .logo{
   padding: 20px;
