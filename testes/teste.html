@@ -1,122 +1,126 @@
-<!DOCTYPE html> 
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>State Softwares</title>
-	<link rel="stylesheet" type="text/css" href="teste.css">
-	<link rel="shortcut icon" href="ico/State.ico" type="image/x-icon">
-  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
-">  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/css/teste.css">
+	<link rel="stylesheet" href="/src/compontens/footer.css">
+    <title>State Software</title>
 </head>
+
 <body>
-  <div class="container" >
-    <div class="menu">
-        <div class="logo">
-      	State<span>Soft</span>
-      </div>
-      <ul>
-        <li><i class="fa-solid fa-house"></i><a href="./pages/home/home.html" >HOME</a></li>
-      	<li><i class="fa-solid fa-cart-shopping"></i><a href="./index.html" >SERVIÇOS</a></li>
-      	<li><i class="fa-solid fa-shop"></i><a href="/./pages/produtos/Produtos.html" >PRODUTOS</a></li>
-      </ul>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
 
-      <ul>
-      	 <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/statesoft_" target="_blank">INSTAGRAM</a></li>
-      	<li><i class="fa-brands fa-facebook"></i>FACEBOOK</li>
-      	<li><i class="fa-brands fa-tiktok"></i>TIKTOK</li>
-			</ul>
-			
-			<ul>
-				<li><i class="fa-solid fa-qrcode"></i><a href="pages/mystate/mystate.html">[ MY STATE ]</a></li>
-			</ul>
-		
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
 
-    </div>  
-
-    <div class="center">
-    	<div class="search">
-    		<div class="form">
-    			<i class="fa-solid fa-magnifying-glass"></i>
-    			<input type="text"placeholder="Search....">
-    			<button>Search</button>
-    		</div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
         </div>
+		</header>
+		<main>
 
-   <h2>PRESTAÇÃO DE SERVIÇOS</h2>  
-  <div class="list">
-     <div class="item" data-key="1">
-        <div class="img">
-           	<img src="" alt="meu avatar">         	
-        </div>
-	     <div class="content">
-		      <div class="title"> Consultoria em TI: </div>
-		      <div class="des">
-	            Oferecer consultoria para empresas que desejam otimizar seus processos de TI, escolher as melhores tecnologias e implementar soluções personalizadas.
-	      </div>
-	      <div class="price">$ 150</div>
-	      <input type="number" class="count" min="1" value="1">
-	      <button class="add" > ADD No carrinho</button>
-	      <button class="remove" onclick="removeItem(this.parentNode.getAttribute('data-key'))"><i class="fa-solid fa-trash-can"></i></button>
-          </div>
-     </div>
-     <div class="item" data-key="2">
-        <div class="img">
-           	<img src="" alt="meu avatar">         	
-        </div>
-	     <div class="content">
-		      <div class="title"> Segurança da informação: </div>
-		      <div class="des">
-	            Realizar auditorias de segurança, implementar soluções de segurança, como firewalls e antivírus, e oferecer treinamento para os funcionários sobre segurança da informação.
-	      </div>
-	      <div class="price">$ 250</div>
-	      <input type="number" class="count" min="1" value="1">
-	      <button class="add" > ADD No carrinho</button>
-	      <button class="remove" onclick="removeItem(this.parentNode.getAttribute('data-key'))"><i class="fa-solid fa-trash-can"></i></button>
-          </div>
-     </div>
 
-     <div class="item" data-key="3">
-        <div class="img">
-           	<img src="" alt="meu avatar">         	
-        </div>
-	     <div class="content">
-		      <div class="title"> Suporte técnico: </div>
-		      <div class="des">
-	            Oferecer suporte técnico remoto ou presencial para empresas e usuários individuais. Isso inclui resolução de problemas em computadores, redes, softwares e dispositivos móveis.
-	      </div>
-	      <div class="price">$ 50,00 </div>
-	      <input type="number" class="count" min="1" value="1">
-	      <button class="add" > ADD No carrinho</button>
-	    <button class="remove" onclick="removeItem(this.parentNode.getAttribute('data-key'))"><i class="fa-solid fa-trash-can"></i></button>
-          </div>
-     </div>
-
-     <div class="item" data-key="4">
-        <div class="img">
-           	<img src="" alt="meu avatar">         	
-        </div>
-	     <div class="content">
-		      <div class="title"> Desenvolvimento de software:</div>
-		      <div class="des">
-	           Desenvolver softwares personalizados para atender às necessidades específicas de cada cliente, como aplicativos web, mobile e sistemas de gestão.
-	      </div>
-	      <div class="price">$ 100 </div>
-	      <input type="number" class="count" min="1" value="1">
-	      <button class="add" > ADD No carrinho</button>
-	      <button class="remove" onclick="removeItem(this.parentNode.getAttribute('data-key'))"><i class="fa-solid fa-trash-can"></i></button>
-          </div>
-     </div> 
-  </div>
- </div>
-    <div class="cart"> 
-			
-    <div class="name">SELECIONAR SERVIÇOS</div>
-
-     <div class="listCart"> 
-				<button class="finalize-purchase" onclick="finalizePurchase()">Finalizar Compra</button>			
-   </div>
-</div> 
-
- <script src="script.js"></script>
+		</main>
+    <script src="assets/js/teste.js"></script>
 </body>
+<footer>
+		<div id="footer_content">
+				<div id="footer_contacts">
+						<h1>State Software <ON> </h1>
+						<p>A persistência é o caminho para o êxito.</p>
+	
+						<div id="footer_social_media">
+								<a href="#" class="footer-link" id="instagram">
+										<i class="fa-brands fa-instagram"></i>
+								</a>
+	
+								<a href="#" class="footer-link" id="facebook">
+										<i class="fa-brands fa-facebook-f"></i>
+								</a>
+	
+								<a href="#" class="footer-link" id="whatsapp">
+										<i class="fa-brands fa-whatsapp"></i>
+								</a>
+						</div>
+				</div>
+				
+				<ul class="footer-list">
+						<li>
+								<h3>Blog</h3>
+						</li>
+						<li>
+								<a href="#" class="footer-link">TECNOLOGIAS</a>
+						</li>
+						<li>
+								<a href="#" class="footer-link">SERVIÇOS</a>
+						</li>
+						<li>
+								<a href="#" class="footer-link">CONTATO</a>
+						</li>
+				</ul>
+	
+				<ul class="footer-list">
+						<li>
+								<h3>Produtos</h3>
+						</li>
+						<li>
+								<a href="#" class="footer-link">App</a>
+						</li>
+						<li>
+								<a href="#" class="footer-link">Desktop</a>
+						</li>
+						<li>
+								<a href="#" class="footer-link">Cloud</a>
+						</li>
+				</ul>
+	
+				<div id="footer_subscribe">
+						<h3>INSCREVA-SE</h3>
+	
+						<p>
+								Digite seu e-mail para ser notificado sobre
+								nossas soluções de notícias
+						</p>
+	
+						<div id="input_group">
+								<input type="email" id="email">
+								<button>
+										<i class="fa-regular fa-envelope"></i>
+								</button>
+						</div>
+				</div>
+		</div>
+	
+		<div id="footer_copyright">
+				&#169
+				2023 all rights reserved
+		</div>
+</footer>
+
+</html>
