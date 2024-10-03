@@ -6,204 +6,119 @@
   <title>State Softwares</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
    <link rel="stylesheet" href="src/compontens/footer.css">
-	<link rel="shortcut icon" href="ico/State.ico" type="image/x-icon">
-  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
-">  
+   <script defer src="script.js"></script>
 </head>
 
- <body>
-	 <!--Adicionado a main-->
-	  <main>
-				<header>
+ <body>	
+	     <!--adicionado header-->
+			<header>
+						<nav class="nav-bar">
 						<div class="logo">
-							State<span>Soft</span>
+							<h1>State Software</h1>
 						</div>
-						<nav>
+						<div class="nav-list">
 							<ul>
-								<li><i class="fa-solid fa-house"></i><a href="./pages/home/home.html">Home</a></li>
-								<li><i class="fa-solid fa-cart-shopping"></i><a href="./index.html">Serviços</a></li>
-								<li><i class="fa-solid fa-shop"></i><a href="/./pages/produtos/Produtos.html">Produtos</a></li>
-								<li><i class="fa-solid fa-shop"></i><a href="testes/teste.html">Testes</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+								<li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
 							</ul>
-						</nav>
-						<div class="search">
-							<div class="form">
-								<i class="fa-solid fa-magnifying-glass"></i>
-								<input type="text" placeholder="Search....">
-								<button>Search</button>
-							</div>
 						</div>
-					</header>
-					
-	  	<div class="container">
-	     	<div class="center">
-			<h1>Prestações de Serviços</h1>
-			<div class="boxes">
-				<div class="box" data-key="1">
-					<div class="image">
-						<img src="" alt="meu avatar">
-					</div>
-					<div class="content">
-						<div class="title">
-							<h3>Consultoria em TI:</h3>
+						<div class="login-button">
+							<button><a href="#">Entrar</a></button>
 						</div>
-						<div class="des">
-							<p>Oferecer consultoria para empresas que desejam otimizar seus processos de TI, escolher as melhores
-								tecnologias e implementar soluções personalizadas.</p>
-						</div>
-						<div class="price">
-							<span>$ 150</span>
-							<button class="add"> Adicionar ao carrinho
-							</button>
-							<button class="remove" onclick="removeItem(this.parentNode.getAttribute('data-key'))"><i
-									class="fa-solid fa-trash-can"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-
-				<div class="box" data-key="2">
-					<div class="image">
-						<img src="" alt="meu avatar">
-					</div>
-					<div class="content">
-						<div class="title">
-							<h3>Segurança da informação: </h3>
-						</div>
-						<div class="des">
-							<p> Realizar auditorias de segurança, implementar soluções de segurança, como firewalls e antivírus, e
-								oferecer treinamento para os funcionários sobre segurança da informação.</p>
-						</div>
-						<div class="price">
-							<span>$ 250</span>
-							<button class="add">Adicionar ao carrinho</button>
-							<button class="remove" onclick="removeItem(this.parentNode.getAttribute('data-key'))"><i
-									class="fa-solid fa-trash-can"></i></button>
-						</div>
-					</div>
-				</div>
-
-				<div class="box" data-key="3">
-					<div class="image">
-						<img src="" alt="meu avatar">
-					</div>
-					<div class="content">
-						<div class="title">
-							<h3>Suporte técnico:</h3>
-						</div>
-						<div class="des">
-							<p>Oferecer suporte técnico remoto ou presencial para empresas e usuários individuais. Isso inclui resolução de problemas em computadores, redes, softwares e dispositivos móveis.</p>
-						</div>
-						<div class="price">
-							<span>$ 50,00</span>
-							<button class="add">Adicionar ao carrinho</button>
-							<button class="remove" onclick="removeItem(this.parentNode.getAttribute('data-key'))"><i
-									class="fa-solid fa-trash-can"></i></button>
-						</div>
-				</div>
-				
-				</div>
-
-				<div class="box" data-key="4">
-						<div class="image">
-							<img src="" alt="meu avatar">
-						</div>
-						<div class="content">
-							<div class="title"> <h3> Desenvolvimento de software:</h3> 
-							</div>
-							<div class="des">
-								<p>
-									Desenvolver softwares personalizados para atender às necessidades específicas de cada cliente, como aplicativos web, mobile e sistemas de gestão.
-								</p>
-								</div>
-							<div class="price">
-								<span>
-									$ 100 
-								</span>
-								<button class="add">Adicionar ao carrinho</button>
-								<button class="remove" onclick="removeItem(this.parentNode.getAttribute('data-key'))"><i
-										class="fa-solid fa-trash-can"></i></button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-      	</div>
-		</main>
-		
-<!--Adicionado footer-->
-<footer>
-	<div id="footer_content">
-			<div id="footer_contacts">
-					<h1>State Software <ON> </h1>
-					<p>A persistência é o caminho para o êxito.</p>
-
-					<div id="footer_social_media">
-							<a href="#" class="footer-link" id="instagram">
-									<i class="fa-brands fa-instagram"></i>
-							</a>
-
-							<a href="#" class="footer-link" id="facebook">
-									<i class="fa-brands fa-facebook-f"></i>
-							</a>
-
-							<a href="#" class="footer-link" id="whatsapp">
-									<i class="fa-brands fa-whatsapp"></i>
-							</a>
-					</div>
-			</div>
 			
-			<ul class="footer-list">
-					<li>
-							<h3>Blog</h3>
-					</li>
-					<li>
-							<a href="#" class="footer-link">TECNOLOGIAS</a>
-					</li>
-					<li>
-							<a href="#" class="footer-link">SERVIÇOS</a>
-					</li>
-					<li>
-							<a href="#" class="footer-link">CONTATO</a>
-					</li>
-			</ul>
-
-			<ul class="footer-list">
-					<li>
-							<h3>Produtos</h3>
-					</li>
-					<li>
-							<a href="#" class="footer-link">App</a>
-					</li>
-					<li>
-							<a href="#" class="footer-link">Desktop</a>
-					</li>
-					<li>
-							<a href="#" class="footer-link">Cloud</a>
-					</li>
-			</ul>
-
-			<div id="footer_subscribe">
-					<h3>INSCREVA-SE</h3>
-
-					<p>
-							Digite seu e-mail para ser notificado sobre
-							nossas soluções de notícias
-					</p>
-
-					<div id="input_group">
-							<input type="email" id="email">
-							<button>
-									<i class="fa-regular fa-envelope"></i>
-							</button>
+						<div class="mobile-menu-icon">
+							<button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+						</div>
+					</nav>
+					
+					<div class="mobile-menu">
+						<ul>
+							<li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+						</ul>
+			
+						<div class="login-button">
+							<button><a href="#">Entrar</a></button>
+						</div>
 					</div>
-			</div>
-	</div>
+			</header>
+		 <!--Adicionado a main-->			
+	         <main class="hero">
+	     	 </main>
+        <!--Adicionado footer-->
+			<footer>
+				<div id="footer_content">
+						<div id="footer_contacts">
+								<h1>State Software <ON> </h1>
+								<p>A persistência é o caminho para o êxito.</p>
 
-	<div id="footer_copyright">
-			&#169
-			2023 all rights reserved
-	</div>
-</footer>
- <script src="script.js"></script>
+								<div id="footer_social_media">
+										<a href="#" class="footer-link" id="instagram">
+												<i class="fa-brands fa-instagram"></i>
+										</a>
+
+										<a href="#" class="footer-link" id="facebook">
+												<i class="fa-brands fa-facebook-f"></i>
+										</a>
+
+										<a href="#" class="footer-link" id="whatsapp">
+												<i class="fa-brands fa-whatsapp"></i>
+										</a>
+								</div>
+						</div>
+						
+						<ul class="footer-list">
+								<li>
+										<h3>Blog</h3>
+								</li>
+								<li>
+										<a href="#" class="footer-link">TECNOLOGIAS</a>
+								</li>
+								<li>
+										<a href="#" class="footer-link">SERVIÇOS</a>
+								</li>
+								<li>
+										<a href="#" class="footer-link">CONTATO</a>
+								</li>
+						</ul>
+
+						<ul class="footer-list">
+								<li>
+										<h3>Produtos</h3>
+								</li>
+								<li>
+										<a href="#" class="footer-link">App</a>
+								</li>
+								<li>
+										<a href="#" class="footer-link">Desktop</a>
+								</li>
+								<li>
+										<a href="#" class="footer-link">Cloud</a>
+								</li>
+						</ul>
+
+						<div id="footer_subscribe">
+								<h3>INSCREVA-SE</h3>
+
+								<p>
+										Digite seu e-mail para ser notificado sobre
+										nossas soluções de notícias
+								</p>
+
+								<div id="input_group">
+										<input type="email" id="email">
+										<button>
+												<i class="fa-regular fa-envelope"></i>
+										</button>
+								</div>
+						</div>
+				</div>
+
+				<div id="footer_copyright">
+						&#169
+						2023 all rights reserved
+				</div>
+			</footer>
 </body>
