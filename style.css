@@ -13,16 +13,11 @@
 }
 body{
   background: center / cover no-repeat url(assets/img/bg.jpg);
-  min-height: 100vh;
 }
-footer {
- 
-  margin-top: 100%;
-  /* other footer styles here */
-}
+
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: 100%;
 }
 header {
   width: 100%;
