@@ -12,7 +12,10 @@
   --blue:  #3b4780;
 }
 body{
+ 
   background: center / cover no-repeat url(assets/img/bg.jpg);
+  top: 0;
+  left: 0;
 }
 
 html {
