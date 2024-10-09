@@ -12,9 +12,14 @@
   --blue:  #3b4780;
 }
 body{
-background-color: var(--blue);
-
-} 
+  background: center / cover no-repeat url(assets/img/bg.jpg);
+  min-height: 100vh;
+}
+footer {
+ 
+  margin-top: 100%;
+  /* other footer styles here */
+}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
@@ -23,7 +28,6 @@ header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.582);
   box-shadow: 0px 3px 10px #030303;
- 
   top: 0;
   left: 0;
   transition: .4s;
@@ -135,24 +139,28 @@ header.rolagem a{
   font-weight: lighter;
   margin: 19px 0;
 }
+css
 
-.container{
-  width: calc(100%); 
+.container {
+  width: calc(100%);
   max-width: 100%;
   margin: 40px auto 0;
   display: flex;
-  grid-template-columns: 300px auto; 
+  justify-content: center;
+  align-items: center;
   background: center / cover no-repeat url(assets/img/bg.jpg);
 }
-
-.faca-mais container{
+.faca-mais container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  border: 30px; 
 }
-.faca-mais .faca-mais-text{
-  width: 50%;
-  padding: 0 30px;
-  color: aqua
+.faca-mais-text {
+  width: 100%;
+  padding: 20px 30px;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 .faca-mais-text h3{
   font-size: 56px;
@@ -160,25 +168,16 @@ header.rolagem a{
 .faca-mais-text p{
   margin: 45px 0 30px 0;
 }
-.faca-mais .faca-mais-img{
-  align-items: center;
-  width: 50%;
-}
-.faca-mais .faca-mais-img img{
-  width: 50%;
-}
 .Aa {
-    background-color: #056ee6c2;
-    color: #eeeded;
-    padding: 15px 20px;
-    border-radius: 10px;
-    display: inline-block;
-    text-decoration: none;
-    transition: 0,4s;
-  }
-
-
-
+  background-color: #056ee6c2;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.4s; 
+  margin: 0 auto;
+}
 
 @media screen and (max-width: 730px) {
   .nav-bar {
