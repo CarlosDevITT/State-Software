@@ -14,27 +14,27 @@
 body{
 background-color: var(--blue);
 
-}
+} 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
 }
 header {
   width: 100%;
-  background-color: black;
-  box-shadow: 0px 3px 10px #464646;
-  position: fixed;
+  background-color: rgba(0, 0, 0, 0.582);
+  box-shadow: 0px 3px 10px #030303;
+ 
   top: 0;
   left: 0;
   transition: .4s;
 }
 header.rolagem{
-   background-color: rgba(255, 255, 255, 0);
+   background-color: rgba(0, 0, 0, 0.678);
    padding: 2px 3%;
  
 }
 header.rolagem a{
-  color: var(--blue)
+  color: var(--white)
 }
 
 .nav-bar {
@@ -44,12 +44,12 @@ header.rolagem a{
 }
 
 .logo {
-  font-family: 'Lobster', cursive;
   display: flex;
   align-items: center;
 }
 
 .logo h1 {
+  font-family: monospace;
   color: var(--light);
   
 }
@@ -62,6 +62,7 @@ header.rolagem a{
 }
 
 .nav-list ul {
+  font-family: monospace;
   display: flex;
   justify-content: center;
   list-style: none;
@@ -72,6 +73,7 @@ header.rolagem a{
 }
 
 .nav-link {
+  font-family: monospace;
   text-decoration: none;
   font-size: 1.15rem;
   color: #fff;
@@ -83,7 +85,7 @@ header.rolagem a{
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
-  background-color: #000000;
+  background-color: #00000081;
 }
 
 .login-button button a {
@@ -100,11 +102,84 @@ header.rolagem a{
 .mobile-menu {
   display: none;
 }
-.hero {
-  height: calc(100vh - 70px);
-  background: center / cover no-repeat url(assets/img/bg.jpg);
 
+
+.btn{
+  background-color: #056ee6c2;
+  color: #eeeded;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0,4s;
 }
+.btn:hover{
+  background-color: #3b4780;
+}
+.banner{
+  display: flex;
+  justify-content: center;
+}
+.banner .banner-text{
+  margin: 50px;
+  text-align: center;
+  padding: 0 96px;
+}
+.banner .banner-text h1{
+  font-size: 40px;
+  color: #fff;
+}
+.banner .banner-text p{
+  font-size: 20px;
+  color: #fff;
+  font-weight: lighter;
+  margin: 19px 0;
+}
+
+.container{
+  width: calc(100%); 
+  max-width: 100%;
+  margin: 40px auto 0;
+  display: flex;
+  grid-template-columns: 300px auto; 
+  background: center / cover no-repeat url(assets/img/bg.jpg);
+}
+
+.faca-mais container{
+  display: flex;
+  align-items: center;
+}
+.faca-mais .faca-mais-text{
+  width: 50%;
+  padding: 0 30px;
+  color: aqua
+}
+.faca-mais-text h3{
+  font-size: 56px;
+}
+.faca-mais-text p{
+  margin: 45px 0 30px 0;
+}
+.faca-mais .faca-mais-img{
+  align-items: center;
+  width: 50%;
+}
+.faca-mais .faca-mais-img img{
+  width: 50%;
+}
+.Aa {
+    background-color: #056ee6c2;
+    color: #eeeded;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0,4s;
+  }
+
+
+
+
 @media screen and (max-width: 730px) {
   .nav-bar {
       padding: 1.5rem 4rem;
