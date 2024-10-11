@@ -5,7 +5,7 @@ Uma microsass para apresentar serviços de TI e oferecer produtos.
 
 ## Requisitos
 * Node.js 
-* Dependências: html, css, js, firebase, nextjs
+* Dependências: html, css, js, firebase, react-native
 
 ## Instalação
 * Clonar o repositório: `git clone https://github.com/CarlosDevITT/state-software.git`
@@ -16,7 +16,7 @@ Uma microsass para apresentar serviços de TI e oferecer produtos.
 * Arquivo de configuração: `config.json`
 * Opções de configuração:
  + `firebase`: configurações do Firebase
- + `nextjs`: configurações do Next.js
+ + `react-native`: configurações do react-native
 
 ## Uso
 * Comandos disponíveis:

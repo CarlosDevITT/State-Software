@@ -1,0 +1,160 @@
+
+html {
+  scroll-behavior: smooth;
+}
+header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.582);
+  box-shadow: 0px 3px 10px #ffffff;
+  top: 0;
+  left: 0;
+  transition: .4s;
+}
+header.rolagem{
+   background-color: rgba(0, 0, 0, 0.678);
+   padding: 2px 3%;
+ 
+}
+header.rolagem a{
+  color: var(--white)
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  font-family: monospace;
+  color: var(--light);
+  
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.nav-list ul {
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  font-family: monospace;
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
+  padding-block-start: 16px;
+}
+
+.login-button button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #00000081;
+}
+
+.login-button button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+
+.btn{
+  background-color: #000000c2;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0,4s;
+}
+.btn:hover{
+  background-color: #3b4780;
+}
+.banner{
+  display: flex;
+  justify-content: center;
+}
+.banner .banner-text{
+  margin: 50px;
+  text-align: center;
+  padding: 0 96px;
+}
+.banner .banner-text h1{
+  font-size: 40px;
+  color: #fff;
+}
+.banner .banner-text p{
+  font-weight: bold;
+  font-size: 30px;
+  color: #fff;
+  font-weight: lighter;
+  margin: 19px 0;
+}
+
+@media screen and (max-width: 730px) {
+  .nav-bar {
+      padding: 1.5rem 4rem;
+  }
+  .nav-item {
+      display: none;
+  }
+  .login-button {
+      display: none;
+  }
+  .mobile-menu-icon {
+      display: block;
+  }
+  .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  }
+  .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+      display: block;
+      padding-top: 1.2rem;
+  }
+  .mobile-menu .login-button {
+      display: block;
+      padding: 1rem 2rem;
+  }
+  .mobile-menu .login-button button {
+      width: 100%;
+  }
+  .open {
+      display: block;
+  }
+}
