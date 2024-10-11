@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* Normalize */
+:root{
+     --white: #fff;
+     --light: #eeeded;
+     --blue:  #3b4780;
+}
+body{
+  background-color: var(--blue);
+  font-family: system-ui;
+  height: 100vh;
+  overflow-y: auto;
+}
+.container {
+  width: 100%; 
+  max-width: 100%;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: 300px auto; 
+  min-height: 90vh;
+}
+.container .menu{
+  background-color: var(--white);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+.container .center{
+  background-color: var(--blue);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/*MENU*/
+.menu .logo{
+  padding: 20px;
+  font-family: 'Lobster', cursive;
+  font-size: xx-large;
+  height: 40px;
+}
+.menu .logo span{
+  color: var(--blue);
+}
+.menu ul{
+  padding:20px 0 20px 20px;
+  list-style: none;
+  border-bottom: 1px solid var(--light);
+  text-decoration: none;
+}
+.menu ul li{
+  padding: 10px 0;
+}
+.menu ul li i{
+  margin-right: 12px;
+}
+.menu ul li.active{
+  color: var(--blue);
+  border-right: 2px solid var(--blue);
+}
+.menu ul li:hover{
+  color: var(--blue);
+  border-right: 2px solid var(--blue);
+}
+.menu ul li a {
+  text-decoration: none;
+}
+ /*FIM MENU*/
+ a:visited {
+  color: black;
+}
+
+/* mouse over */
+a:hover {
+  color: #000000;
+}
+
+/* link selecionado */
+a:active {
+  color: blue;
+}
+
+h1{
+  color: #3b4780;
+  padding: 80px;
+}
+h1:hover{
+  animation-delay: inherit;
+}
