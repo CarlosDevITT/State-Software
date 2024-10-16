@@ -47,7 +47,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .price-box:hover {
-	 background: #ff8139;
+	 background: #3363e7;
 	 color: #ffffff;
 }
 
@@ -71,7 +71,7 @@ button:focus, input:focus, textarea:focus {
 .price-box h2 {
     font-size: 60px;
     font-weight: 700;
-    color: #ff8139;
+    color: #3363e7;
     transition: .3s;
 }
 
@@ -128,7 +128,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 .price-btn {
-    background: #ff8139;
+    background:  #3363e7;
     display: inline-block;
     padding: 7px 20px;
     color: #ffffff;
@@ -144,7 +144,7 @@ button:focus, input:focus, textarea:focus {
 	 width: 5px;
 	 height: 100%;
 	 right: -13px;
-	 background: #ff8139;
+	 background:  #3363e7;
 	 transition: .3s;
 }
 
