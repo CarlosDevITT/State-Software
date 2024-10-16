@@ -1,0 +1,166 @@
+section {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 26px;
+	background: #000000;
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+/*======================
+   03. price css
+========================*/
+
+.price-wrapper {
+	padding: 10px 0;
+	background: rgba(0, 0, 0, 0.205);
+}
+
+.head-text {
+	font-size: 40px;
+	color: #222222;
+	font-weight: 700;
+}
+
+.price-box {
+	 position: relative;
+	 padding: 65px 43px 53px;
+	 background: #222222;
+	 margin-top: 40px;
+	 transition: .3s;
+}
+
+.price-box:hover {
+	 background: #ff8139;
+	 color: #ffffff;
+}
+
+.price-shape1, .price-shape2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.price-ab-text {
+    background: #FFE713;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    padding: 4px 15px;
+    font-size: 16px;
+    color: #222222;
+    line-height: 20px;
+}
+
+.price-box h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ff8139;
+    transition: .3s;
+}
+
+.price-box:hover h2 {
+	 color: #222222;
+}
+
+.price-box h2 span {
+	 font-size: 16px;
+	 color: #ffffff;
+	 font-weight: 400;
+}
+
+.price-box p {
+    font-size: 15px;
+    padding: 10px 0;
+    color: #a29a9a;
+    transition: .3s;
+}
+
+.price-box:hover p {
+	 color: #ffffff;
+}
+
+.price-box ul {
+	 border-top: 1px solid rgba( 255, 255, 255, 0.3);
+	 padding: 15px 0;
+}
+
+.price-box ul li {
+	 position: relative;
+	 padding: 5px 0 5px 40px;
+	 margin: 10px 0;
+}
+
+.price-box ul li::before {
+	 content: "\f00c";
+	 position: absolute;
+	 left: 0;
+	 top: 5px;
+	 font-size: 12px;
+	 font-weight: 600;
+	 width: 24px;
+	 height: 24px;
+	 border-radius: 50%;
+	 display: block;
+	 background: rgba( 255, 255, 255, 0.2);
+	 font-family: 'Font Awesome 5 Free';
+	 text-align: center;
+}
+
+.price-box:hover .price-btn {
+	 background: #222222;
+}
+
+.price-btn {
+    background: #ff8139;
+    display: inline-block;
+    padding: 7px 20px;
+    color: #ffffff;
+    transform: skewX(-10deg);
+    position: relative;
+    transition: .3s;
+}
+
+.price-btn::before {
+	 content: "";
+	 position: absolute;
+	 top: 0;
+	 width: 5px;
+	 height: 100%;
+	 right: -13px;
+	 background: #ff8139;
+	 transition: .3s;
+}
+
+.price-box:hover .price-btn::before {
+	 background: #222222;
+}
+
+.price-btn span {
+	 transform: skewX(10deg);
+}
+
+.price-btn:hover {
+	 color: #ffffff;
+}
+
+.price-box-two .price-ab-text {
+	  background: #92ADC6;
+	  color: #ffffff;
+}
