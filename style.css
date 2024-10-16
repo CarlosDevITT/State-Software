@@ -199,14 +199,14 @@ section.sobre .flex {
 }
 
 .btn-social button {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  max-width: 350px;
+  height: 50px;
+  border-radius: 30px;
   border: none;
   background-color: rgba(0, 0, 255, 0.493);
-  font-size: 22px;
+  font-size: 19px;
   cursor: pointer;
-  margin: 0 5px;
+  margin: 10 5px;
   transition: .2s;
 }
 
