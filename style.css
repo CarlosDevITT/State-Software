@@ -26,6 +26,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   background-color: rgba(0, 0, 255, 0.493);
+  color: #fff;
   border: 0;
   border-radius: 30px;
   cursor: pointer;
@@ -44,8 +45,8 @@ h2.titulo span {
 
 button:hover,
 form .btn-enviar input:hover {
-  box-shadow: 0px 0px 8px rgba(0, 0, 255, 0.493);
-  transform: scale(1.05);
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.493);
+  transform: scale(1.09);
 }
 
 html {
@@ -198,21 +199,10 @@ section.sobre .flex {
   text-align: justify;
 }
 
-.btn-social button {
-  max-width: 350px;
-  height: 50px;
-  border-radius: 30px;
-  border: none;
-  background-color: rgba(0, 0, 255, 0.493);
-  font-size: 19px;
-  cursor: pointer;
-  margin: 10 5px;
-  transition: .2s;
-}
 
 /* ESTILO DO PORTFÓLIO */
 section.portfolio {
-  background-image: url(assets/img/bg.jpg);
+
   padding: 80px 4%;
   box-shadow: 0 0 40px 10px #ffffff1d;
 }
@@ -300,7 +290,7 @@ form .btn-enviar {
 form .btn-enviar input {
   width: 120px;
   background-color: rgba(0, 0, 255, 0.493);
-  color: #000;
+  color: rgb(255, 255, 255);
   font-weight: 700;
   cursor: pointer;
   transition: .2s;
