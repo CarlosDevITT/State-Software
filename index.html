@@ -1,349 +1,523 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="app, landing, corporate, Creative, Html Template, Template">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="app, landing, corporate, Creative, Html Template, Template">
 	<meta name="author" content="web-themes">
-
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-	<link rel="stylesheet" href="./src/compontens/header/css/styles.css">
-
-   <!--footer-->
-	 <link rel="stylesheet" href="./src/compontens/footer.css">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	 <!--footer-->
-	 
-	<!--=============== BOXICONS ===============-->
-	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-	
-	
-	<link defer rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="src/cookies/cookies.css">
-
-	 
-	 <script src="src/cookies/cookies.js" defer></script>
-  
-	 <script defer src="script.js"></script>
-	 
-   <link rel="shortcut icon" type="imagex/png" href="./assets/img/State.ico">
-	 <title>State Softwares</title>
-	 
-    <!-- CSS -->
-    <link href="./src/price-section/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="./src/price-section/fontawesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="./src/price-section/style.css " rel="stylesheet" type="text/css" />
-
+    <link rel="shortcut icon" type="imagex/png" href="src/images/State.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="src/js/head.js"></script>
+    <title>State Software Studio</title>
+    <style>
+            a span {
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.555);
+                padding: 10px 15px;
+                border-radius: 5px;
+                transition: background-color 0.3s, color 0.3s;
+            }
+    
+        </style>
 </head>
-
- <body>	
-	
-	    <!--header-->
-			<header class="header">
-				<nav class="nav container">
-					 <div class="nav__data">
-							<a href="https://www.instagram.com/statesoft_/?hl=pt-br" class="nav__logo">
-								 <i class="ri-planet-line"></i> State Sof
-							</a>
-							
-							<div class="nav__toggle" id="nav-toggle">
-								 <i class="ri-menu-line nav__burger"></i>
-								 <i class="ri-close-line nav__close"></i>
-							</div>
-					 </div>
-
-					 <!--=============== NAV MENU ===============-->
-					 <div class="nav__menu" id="nav-menu">
-							<ul class="nav__list">
-								 <li><a href="index.html" class="nav__link">Home</a></li>
-
-								 <li><a href="#sobre" class="nav__link">Company</a></li>
-
-								 <!--=============== DROPDOWN 1 ===============-->
-								 <li class="dropdown__item">
-										<div class="nav__link">
-											 Planos <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-										</div>
-
-										<ul class="dropdown__menu">
-											 <li>
-													<a href="#planos" class="dropdown__link">
-														 <i class="ri-pie-chart-line"></i> Basico
-													</a>                          
-											 </li>
-
-											 <li>
-													<a href="#" class="dropdown__link">
-														 <i class="ri-arrow-up-down-line"></i> Ultra
-													</a>
-											 </li>
-										
-
-											 <!--=============== DROPDOWN SUBMENU ===============-->
-											 <li class="dropdown__subitem">
-													<div class="dropdown__link">
-														 <i class="ri-bar-chart-line"></i> Pro <i class="ri-add-line dropdown__add"></i>
-													</div>
-
-													<ul class="dropdown__submenu">
-														 <li>
-																<a href="#" class="dropdown__sublink">
-																	 <i class="ri-file-list-line"></i> Documents
-																</a>
-														 </li>
-		 
-														 <li>
-																<a href="#" class="dropdown__sublink">
-																	 <i class="ri-cash-line"></i> Payments
-																</a>
-														 </li>
-		 
-														 <li>
-																<a href="#" class="dropdown__sublink">
-																	 <i class="ri-refund-2-line"></i> Refunds
-																</a>
-														 </li>
-													</ul>
-											 </li>
-										</ul>
-								 </li>
-								 
-								 <li><a href="#service" class="nav__link">Serviços</a></li>
-
-								 <!--=============== DROPDOWN 2 ===============-->
-								 <li class="dropdown__item">
-										<div class="nav__link">
-											 Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-										</div>
-
-										<ul class="dropdown__menu">
-											 <li>
-													<a href="#" class="dropdown__link">
-														 <i class="ri-user-line"></i> Profiles
-													</a>                          
-											 </li>
-
-											 <li>
-													<a href="#" class="dropdown__link">
-														 <i class="ri-lock-line"></i> Accounts
-													</a>
-											 </li>
-
-											 <li>
-													<a href="#" class="dropdown__link">
-														 <i class="ri-message-3-line"></i> Messages
-													</a>
-											 </li>
-										</ul>
-								 </li>
-
-								 <li><a href="#" class="nav__link">Contato</a></li>
-							</ul>
-					 </div>
-				</nav>
-		 </header>
-	 <!--fim header-->
-	
-		<!--main-->
-    <main>
-			<section class="topo-do-site">
-					<div class="interface">
-							<div class="flex">
-									<div class="txt-topo-site">
-											<h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
-											<p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença online dos seus sonhos.</p>
-
-											<div class="btn-contato">
-													<a href="#">
-															<button>Entre em contato</button>
-													</a>
-											</div>
-									</div><!--txt-topo-site-->
-
-									<div class="img-topo-site">
-											<img src="assets/img/Diamound.png" alt="">
-									</div><!--img-topo-site-->
-							</div><!--flex-->
-					</div><!--interface-->
-			</section><!--topo-do-site-->
-
-			<section id="service" class="especiliadades">
-					<div class="interface">
-							<h2 class="titulo">NOSSAS <span>ESPECIALIDADES.</span></h2>
-							<div class="flex">
-									<div class="especialidades-box">
-								
-											<h3>Website</h3>
-											
-											<p>Seu negócio precisa de um site moderno e eficaz? Transformo suas ideias em realidade, desenvolvendo sites personalizados que geram resultados.</p>
-									</div><!--especialidades-box-->
-
-									<div class="especialidades-box">
-											<i class="bi bi-cart"></i>
-											<h3>Automação</h3>
-											<p>Diga adeus às tarefas repetitivas. Com minhas soluções de automação, otimizo seus fluxos de trabalho e impulsiono o crescimento do seu negócio.</p>
-									</div><!--especialidades-box-->
-
-									<div class="especialidades-box">
-											<i class="bi bi-wordpress"></i>
-											<h3>Agentes de IA</h3>
-											<p>Leve sua empresa para o futuro com a inteligência artificial. Desenvolvo soluções personalizadas para atender às suas necessidades específicas..</p>
-									</div><!--especialidades-box-->
-
-									<div class="especialidades-box">
-										<i class="bi bi-wordpress"></i>
-										<h3>Suporte remoto</h3>
-										<p>Seu técnico pessoal, a um clique de distância! Nosso suporte remoto é simples e fácil de usar. Resolva seus problemas sem sair de casa ou do escritório..</p>
-								</div><!--especialidades-box-->
-
-
-							</div><!--flex-->
-					</div><!--interface-->
-			</section><!--especiliadades-->
-
-			<section id="sobre" class="sobre">
-					<div class="interface">
-							<div class="flex">
-									<div class="img-sobre">
-											<img src="assets/img/Diamound.png" alt="">
-									</div><!--img-sobre-->
-<!-- ESSE E MEU CHATBOT :  NOME E DIAMOND -->
-									<div class="txt-sobre">
-											<h2>DIAMOND IA<span>AGENTE DE IA.</span></h2>
-											<p>Olá! Sou o Diamond, seu assistente virtual Criado pela State Software. Estou aqui para te ajudar a encontrar as informações que você precisa.  Posso responder a perguntas sobre nossos produtos e serviços, ou te ajudar a encontrar a informação que você precisa.</p>
-											<p>Quer saber mais sobre como posso te ajudar? <a href="#">Clique aqui para ver.</a></p>
-											<div class="btn-social">
-										
-											</div><!--btn-social-->
-									</div><!--txt-sobre-->
-							</div><!--flex-->
-					</div><!--interface-->
-			</section><!--sobre-->
-
-			<section id="planos" class="portfolio">
-					<div class="interface">
-							<h2 class="titulo">PLANOS <span>STATES.</span></h2>
-							<div class="flex">
-									<div class="price-wrapper">
-											<div class="container">
-													<div class="row">
-															<div class="col-12 text-center">
-														
-															</div>
-															<div class="col-lg-4">
-																	<div class="price-box">
-																			<img class="price-shape1" src="./src/price-section/img/bg-pricetable-2.png" >
-																			<img class="price-shape2" src="./src/price-section/img/bg-pricetable-1.svg" >
-																			<span class="price-ab-text">Basico</span>
-																			<h2>$19,00<span>/Mês</span></h2>
-																			<p>Uma boa opção para Aumentar o Desempenho no trabalho</p>
-																			<ul>
-																					<li>ferramentas de IA </li>
-																					<li>Suporte remoto</li>
-																					<li>Indicativo de IAs</li>
-																					<li>Analise de Negocio</li>
-																					<li>Acesso a plataforma</li>
-																			</ul>
-																			<a class="price-btn" href="#"><span>ASSINAR</span></a>
-																	</div>
-															</div>
-															<div class="col-lg-4">
-																	<div class="price-box price-box-two">
-																		<img class="price-shape1" src="./src/price-section/img/bg-pricetable-2.png" >
-																			<img class="price-shape2" src="./src/price-section/img/bg-pricetable-1.svg" >
-																			<span class="price-ab-text">Ultra</span>
-																			<h2>$25<span>/Mês</span></h2>
-																			<p>Uma boa opção para Aumenta a sua produtividade </p>
-																	
-																			<ul>
-																					<li>Acesso a plataforma </li>
-																					<li>Automação de tarefas</li>
-																					<li>Agentes de IA</li>
-																					<li>Controle de gestão</li>
-																					<li>Suporte tecnico remoto</li>
-																			</ul>
-																			<strong>PROMOÇÃO BLACK!!</strong>
-																			<a class="price-btn" href="#"><span>ASSINAR</span></a>
-																	</div>
-															</div>
-															<div class="col-lg-4">
-																	<div class="price-box price-box-two">
-																			<img class="price-shape1" src="./src/price-section/img/bg-pricetable-2.png" >
-																			<img class="price-shape2" src="./src/price-section/img/bg-pricetable-1.svg" >
-																			<span class="price-ab-text">Pro</span>
-																			<h2>$100<span>/Mês</span></h2>
-																			<p>Uma boa opção para trabalhar remotamente com seus clientes</p>
-																			<ul>
-																					<li>Suporte 24H</li>
-																					<li>Agentes IA</li>
-																					<li>ferramentas de Automação</li>
-																					<li>Acesso a plataforma</li>
-																					<li>Suporte & Mentoria</li>
-																			</ul>
-																			<a class="price-btn" href="#"><span>ASSINAR</span></a>
-																	</div>
-															</div>
-															
-													</div>
-											</div>
-									</div>
-					 
-								
-							
-							</div><!--flex-->
-					</div><!--interface-->
-			</section><!---->
-
-			<section class="formulario">
-					<div class="interface">
-							<h2 class="titulo">ENTRE EM <span>CONTATO.</span></h2>
-
-							<form action="">
-									<input type="text" name="" id="" placeholder="Seu nome completo:" required>
-									<input type="text" name="" id="" placeholder="Seu e-mail:" required>
-									<input type="text" name="" id="" placeholder="Seu celular:">
-									<textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-									<div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-							</form>
-					</div><!--interface-->
-			</section><!--formulario-->
-
-		</main>
-		
-		<div class="cookies-msg" id="cookies-msg">
-        <div class="cookies-txt">
-            <p>Este site usa cookies e tecnologias afins, que são pequenos arquivos ou pedaços de texto baixados para um aparelho quando o visitante acessa um website ou aplicativo. Ao utilizar nosso site você está de acordo com a utilização dos cookies para te proporcionar uma melhor experiência.</p>
-
-            <div class="cookies-btn">
-                <button onclick="aceito()">Aceito</button>
+<body>
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 bg-white dark:bg-gray-900 w-full border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <span>STATE SOFT</span>
+                    </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-1 rtl:space-x-reverse">
+                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <a href="https://www.whatsapp.com/product/8045980925486448/559285130951/?app_absent=0" >Contatar</a>  
+                </button>
+                <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#home" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#team" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            Nossa equipe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#prices" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            Planos
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div><!--cookies-msg-->
+    </nav>
 
-<!--main-->
-<footer>
-	<div class="footerContainer">
-			<div class="socialIcons">
-					<a href=""><i class="fa-brands fa-facebook"></i></a>
-					<a href="https://www.instagram.com/statesoft_/?hl=pt-br"><i class="fa-brands fa-instagram"></i></a>
-					<a href=""><i class="fa-brands fa-twitter"></i></a>
-					<a href=""><i class="fa-brands fa-google-plus"></i></a>
-					<a href="https://www.youtube.com/@carlos_domingos.0"><i class="fa-brands fa-youtube"></i></a>
-			</div>
-			<div class="footerNav">
-					<ul><li><a href="index.html">Home</a></li>
-							<li><a href="https://github.com/CarlosDevITT">News</a></li>
-							<li><a href="#header">About</a></li>
-							<li><a href="https://wa.me/5592985130951">Contato</a></li>
-							<li><a href="https://www.instagram.com/statesoft_/?hl=pt-br">Team</a></li>
-					</ul>
-			</div>
-			
-	</div>
-	<div class="footerBottom">
-			<p>Copyright &copy;2024; State Soft<span class="designer">CARLOS</span></p>
-	</div>
-</footer>
- <!-- fim footer-->
- <script src="./src/compontens/header/js/main.js"></script>
+    <!-- HOME -->
+    <section id="home" class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+            <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                <span class="text-sm font-medium px-4 py-1">
+                    <i class="fa-regular fa-lightbulb pe-1"></i>
+                    Mostre suas ideias para o mundo
+                </span> 
+                <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </a>
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                Conheça nossas soluções <br>
+                para a
+                <span class="text-blue-700 dark:text-blue-500">sua marca</span>
+            </h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+                Conecte-se, compartilhe e inspire – aqui, sua voz ganha alcance e suas ideias criam conexões que transformam!
+            </p>
+            <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center dark:text-white rounded-lg focus:ring-4 focus:ring-primary-300">
+                    Conhecer
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                    Assistir vídeo
+                </a>  
+            </div>
+            <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-12 pt-8">
+                    <div class="flex flex-wrap justify-center items-center text-gray-500 sm:justify-between">
+                        <a href="#" class="text-3xl font-bold mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                            <i class="fa-solid fa-chart-line"></i>
+                            #Gestão de Tráfego
+                        </a>
+                       
+                        <a href="#" class="text-3xl font-bold mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            #Web Development
+                        </a>
+                     
+                        <a href="#" class="text-3xl font-bold mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            #Marketing
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="bg-white dark:bg-gray-900">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <span class="text-blue-700 dark:text-blue-500">
+                    Sobre nós
+                </span>
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                    Sua empresa Online
+                </h2>
+                <p class="mb-4">
+                    Somos especialistas em transformar produtos em histórias visuais que conquistam. Nossa missão é cuidar de toda a presença digital da sua marca: 
+                    desde a fotografia e filmagem dos seus produtos até o design estratégico para mídias sociais. Planejamos, criamos e gerenciamos seu conteúdo, 
+                    focados em engajar o público e alavancar suas vendas. 
+                </p>
+                <p>
+                    Combinamos criatividade, estratégia e inovação para garantir que sua marca brilhe e alcance o destaque que merece.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <img class="w-full rounded-lg" src="src/images/about/filmaker.jpg" alt="office content 1">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="src/images/about/photographer.jpg" alt="office content 2">
+            </div>
+        </div>
+    </section>
+
+  <!-- SERVICES -->
+    <section id="services" class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <span class="text-blue-700 dark:text-blue-500">
+                Nossos serviços
+            </span>
+            <div class="max-w-screen-md mb-8 lg:mb-16">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                    Criado para marcas que querem crescer
+                </h2>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">
+                    Aqui na State Soft somos especialistas em transformar produtos e serviços em experiências visuais impactantes, 
+                    criando conteúdos de alta qualidade para destacar sua marca nas redes sociais e alavancar seus resultados.
+                </p>
+            </div>
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                <div>
+                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-500 lg:h-12 lg:w-12 dark:bg-blue-600">
+                        <i class="fa-solid fa-chart-line text-white"></i>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Gestão de Tráfego</h3>
+                    <p class="text-gray-500 dark:text-gray-400">
+                        Tráfego pago é uma estratégia de marketing digital que envolve o investimento financeiro em anúncios online para direcionar visitantes a um site, página de destino ou oferta específica.
+                    </p>
+                </div>
+    
+                <div>
+                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-500 lg:h-12 lg:w-12 dark:bg-blue-600">
+                        <i class="fa-solid fa-cogs text-white"></i>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Automação</h3>
+                    <p class="text-gray-500 dark:text-gray-400">
+                        Diga adeus às tarefas repetitivas. Com minhas soluções de automação, otimizo seus fluxos de trabalho e impulsiono o crescimento do seu negócio.
+                    </p>
+                </div>
+    
+                <div>
+                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-500 lg:h-12 lg:w-12 dark:bg-blue-600">
+                        <i class="fa-solid fa-laptop-code text-white"></i>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Web Development</h3>
+                    <p class="text-gray-500 dark:text-gray-400">
+                        Seu negócio precisa de um site moderno e eficaz? Transformo suas ideias em realidade, desenvolvendo sites personalizados que geram resultados.
+                    </p>
+                </div>
+                
+                <div>
+                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-500 lg:h-12 lg:w-12 dark:bg-blue-600">
+                        <i class="fa-solid fa-headset text-white"></i>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Suporte Remoto</h3>
+                    <p class="text-gray-500 dark:text-gray-400">
+                        Seu técnico pessoal, a um clique de distância! Nosso suporte remoto é simples e fácil de usar. Resolva seus problemas sem sair de casa ou do escritório.
+                    </p>
+                </div>
+    
+                <div>
+                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-500 lg:h-12 lg:w-12 dark:bg-blue-600">
+                        <i class="fa-solid fa-bullhorn text-white"></i>
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
+                    <p class="text-gray-500 dark:text-gray-400">
+                        O marketing eficaz começa com a identificação das necessidades e dos desejos das pessoas, que quase sempre se resumem a aspirações profundas e que apelam às suas emoções, como aventura, pertencimento, conexão, liberdade, força e tranquilidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TEAM -->
+    <section id="team" class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+            <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                    Nossa Equipe
+                </h2>
+                <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+                    Nossa equipe é composta por profissionais apaixonados e experientes que trabalham 
+                    juntos para transformar suas redes sociais e ajudar seu negócio a crescer. Conheça os especialistas que farão tudo acontecer.
+                </p>
+            </div> 
+
+            <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+                <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="src/images/about/carlos.png" alt="Bonnie Avatar">
+                    </a>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            <a href="#">Carlos Domingos</a>
+                        </h3>
+                        <span class="text-gray-500 dark:text-gray-400">CEO & Estrategista de Mídias Sociais</span>
+                        <span class="text-gray-500 dark:text-gray-400">Analista e Desenvolvedor de Sistema</span>
+                        <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                            lidera e fazer a criação de estratégias personalizadas para cada cliente, 
+                            focando no crescimento e engajamento das redes sociais.
+                            Como Inteligência Artificial e Programação, Me proporcionar uma base sólida para enfrentar desafios complexos e buscar soluções inovadoras.
+                        </p>
+                        <ul class="flex space-x-4 sm:mt-0">
+                            <li>
+                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="src/images/about/filmaker.jpg" alt="Jese Avatar">
+                    </a>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            <a href="#">DIAMOND IA</a>
+                        </h3>
+                        <span class="text-gray-500 dark:text-gray-400">Agente De inteligência artificial & Assistente Virtual</span>
+                        <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                            DIAMOND é responsável pela identidade visual de nossos clientes, criando designs impactantes para suas redes sociais, ele foi desenvolvido para auxiliar nossos desenvolvedores.
+                        </p>
+                        <ul class="flex space-x-4 sm:mt-0">
+                            <li>
+                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+                
+               
+            </div>  
+        </div>
+    </section>
+
+ <!-- PRICES -->
+<section id="prices" class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                Escolha o Plano Ideal para Impulsionar Seu Negócio.
+            </h2>
+            <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                Oferecemos planos personalizados para atender às suas necessidades,
+                com opções flexíveis que se ajustam ao seu orçamento e objetivos de crescimento. Veja abaixo os planos que preparamos para você!
+            </p>
+        </div>
+        <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+            <!-- Pricing Card 1 -->
+            <div id="basic-plan" class="pricing-card flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <h3 class="mb-4 text-2xl font-semibold">Plano Básico</h3>
+                <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                    Perfeito para quem está começando seu Negócio.
+                </p>
+                <div class="flex justify-center items-baseline my-8">
+                    <span class="mr-2 text-5xl font-extrabold">R$ 29,90</span>
+                    <span class="text-gray-500 dark:text-gray-400">/mês</span>
+                </div>
+                <ul role="list" class="mb-8 space-y-4 text-left">
+                    <li>4 posts mensais</li>
+                    <li>Consultoria inicial de estratégia de mídias sociais</li>
+                    <li>Monitoramento e relatórios mensais</li>
+                    <li>Gestão de Tráfego: R$ 50 em anúncios</li>
+                    <li>Landing page: página personalizada</li>
+                </ul>
+                <button onclick="redirectToWhatsApp('Plano Básico', 'R$ 29,90', '4 posts mensais, Consultoria inicial de estratégia de mídias sociais, Monitoramento e relatórios mensais, Gestão de Tráfego: R$ 50 em anúncios, Landing page: página personalizada')" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700">
+                    Começar
+                </button>
+            </div>
+            
+            <!-- Pricing Card 2 -->
+            <div id="intermediate-plan" class="pricing-card flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <h3 class="mb-4 text-2xl font-semibold">Plano Intermediário</h3>
+                <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                    Para quem já tem presença digital e quer dar um salto no engajamento.
+                </p>
+                <div class="flex justify-center items-baseline my-8">
+                    <span class="mr-2 text-5xl font-extrabold">R$ 50,00</span>
+                    <span class="text-gray-500 dark:text-gray-400">/mês</span>
+                </div>
+                <ul role="list" class="mb-8 space-y-4 text-left">
+                    <li>Suporte Remoto: 24 horas</li>
+                    <li>8 posts mensais</li>
+                    <li>Consultoria contínua de estratégia</li>
+                    <li>3 vídeos promocionais mensais</li>
+                    <li>Relatórios detalhados de performance semanal</li>
+                    <li>Web Development: Site com funcionalidades personalizadas</li>
+                </ul>
+                <button onclick="redirectToWhatsApp('Plano Intermediário', 'R$ 50,00', 'Suporte Remoto: 24 horas, 8 posts mensais, Consultoria contínua de estratégia, 3 vídeos promocionais mensais, Relatórios detalhados de performance semanal, Web Development: Site com funcionalidades personalizadas')" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700">
+                    Começar
+                </button>
+            </div>
+
+            <!-- Pricing Card 3 -->
+            <div id="advanced-plan" class="pricing-card flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <h3 class="mb-4 text-2xl font-semibold">Plano Avançado</h3>
+                <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                    Para empresas que buscam maximizar seu potencial nas redes sociais.
+                </p>
+                <div class="flex justify-center items-baseline my-8">
+                    <span class="mr-2 text-5xl font-extrabold">R$ 199,90</span>
+                    <span class="text-gray-500 dark:text-gray-400">/mês</span>
+                </div>
+                <ul role="list" class="mb-8 space-y-4 text-left">
+                    <li>12 posts mensais</li>
+                    <li>Consultoria estratégica personalizada</li>
+                    <li>Chat bot: personalizado</li>
+                    <li>Gestão de Tráfego: Orçamento flexível</li>
+                    <li>Suporte Remoto: 24 horas</li>
+                    <li>Web Development: Site completo com funcionalidades personalizadas</li>
+                    <li>Automação: Implementação de automações avançadas</li>
+                </ul>
+                <button onclick="redirectToWhatsApp('Plano Avançado', 'R$ 199,90', '12 posts mensais, Consultoria estratégica personalizada, Chat bot: personalizado, Gestão de Tráfego: Orçamento flexível, Suporte Remoto: 24 horas, Web Development: Site completo com funcionalidades personalizadas, Automação: Implementação de automações avançadas')" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700">
+                    Começar
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function redirectToWhatsApp(plano, preco, beneficios) {
+        const telefone = '559285130951';  // Seu número de telefone (com DDD)
+        const mensagem = `
+            Olá, estou interessado no ${plano}!
+            Preço: ${preco}
+            Benefícios: ${beneficios}
+        `.trim();  // Estrutura a mensagem com as informações do plano
+
+        // Codifica a mensagem para URL
+        const mensagemCodificada = encodeURIComponent(mensagem);
+
+        // Redireciona para o WhatsApp com a mensagem
+        window.open(`https://api.whatsapp.com/send?phone=${telefone}&text=${mensagemCodificada}`, '_blank');
+    }
+</script>
+
+    <!-- CONTACT -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Entre em contato</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+                Tem uma dúvida técnica? Quer enviar feedback sobre nossos serviços? 
+                Precisa de mais detalhes sobre nossos planos? Estamos aqui para ajudar. Fale com a gente!
+            </p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Seu e-mail</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="exemplo@gmail.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Assunto</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Deixe-nos saber como podemos ajudar você" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Sua mensagem</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Deixe sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
+        <div class="mx-auto max-w-screen-xl pt-3 pb-3">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                        <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+                                <span>STATE SOFT</span>
+                            </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Saiba mais</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Sobre nós</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Nos siga</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="https://www.instagram.com/statesoft_/?hl=pt-br" class="hover:underline ">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/CarlosDevITT" class="hover:underline">LinkedIn</a>
+                            </li>
+                        </ul> 
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="https://docs.google.com/document/d/1lYDogyU-0nLAg99iw3zlLtdNu1wYeun-dQEL3ihnII0/edit?usp=sharing" class="hover:underline">Politica e privacidade</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.google.com/document/d/1lYDogyU-0nLAg99iw3zlLtdNu1wYeun-dQEL3ihnII0/edit?usp=sharing" class="hover:underline">Termos e condições</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 State Todos os Direitos Reservados.
+                </span>
+                <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                    <a href="https://www.instagram.com/statesoft_/?hl=pt-br" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="https://www.instagram.com/statesoft_/?hl=pt-br" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="https://www.instagram.com/statesoft_/?hl=pt-br" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                    </a>
+                    <a href="https://www.instagram.com/statesoft_/?hl=pt-br" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="c" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
+</html>
