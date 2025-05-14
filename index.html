@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="app, landing, corporate, Creative, Html Template, Template">
 	<meta name="author" content="web-themes">
-    <link rel="shortcut icon" type="imagex/png" href="src/images/State.jpg">
+    <link rel="shortcut icon" type="img/png" href="img/2logo.png">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2 @11"></script>
     <script src="src/js/head.js"></script>
     <title>State Software Studio</title>
     <style>
@@ -30,7 +31,7 @@
     <nav class="sticky top-0 bg-white dark:bg-gray-900 w-full border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
-                        <span>STATES SOFT</span>
+                        <span>STATES</span> <i class="fa-solid fa-robot"></i>
                     </a>
             <div class="flex md:order-2 space-x-3 md:space-x-1 rtl:space-x-reverse">
                 <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -82,10 +83,10 @@
     <!-- HOME -->
     <section id="home" class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-            <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+            <a href="#prices" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
                 <span class="text-sm font-medium px-4 py-1">
                     <i class="fa-regular fa-lightbulb pe-1"></i>
-                   Seu negócio com Inteligência Artificial
+                   Seu negócio com IA
                 </span> 
                 <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
             </a>
@@ -101,10 +102,63 @@
                     Conhecer
                     <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </a>
-                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                    <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
-                    Assistir vídeo
-                </a>  
+
+                    <!-- Botão para abrir o modal -->
+            <a href="#" id="openModalBtn" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
+                </svg>
+                Assistir vídeo
+            </a>
+
+            <!-- Modal -->
+            <div id="videoModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-70 p-4">
+                <!-- Conteúdo do modal -->
+                <div class="relative w-full max-w-[300px] sm:max-w-[350px] mx-auto bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-800">
+                    <!-- Botão Fechar -->
+                    <button id="closeModalBtn" class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white text-2xl z-10">
+                        &times;
+                    </button>
+                    <!-- Iframe do YouTube Short -->
+                    <div class="aspect-w-9 aspect-h-16">
+                        <iframe id="videoIframe" class="w-full" src="" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                const openModalBtn = document.getElementById("openModalBtn");
+                const closeModalBtn = document.getElementById("closeModalBtn");
+                const videoModal = document.getElementById("videoModal");
+                const videoIframe = document.getElementById("videoIframe");
+
+                // Extrair ID do vídeo do YouTube a partir do URL
+                const url = "https://www.youtube.com/shorts/5w65sDEkSXY ";
+                const videoId = url.split("/")[4].split("?")[0]; // Extrai '5w65sDEkSXY'
+                const embedUrl = `https://www.youtube.com/embed/ ${videoId}?autoplay=1`;
+
+                openModalBtn.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    videoIframe.src = embedUrl;
+                    videoModal.classList.remove("hidden");
+                });
+
+                closeModalBtn.addEventListener("click", () => {
+                    videoIframe.src = ""; // Para o vídeo ao fechar
+                    videoModal.classList.add("hidden");
+                });
+
+                // Fecha modal ao clicar fora do conteúdo
+                videoModal.addEventListener("click", (e) => {
+                    if (e.target === videoModal) {
+                        videoIframe.src = "";
+                        videoModal.classList.add("hidden");
+                    }
+                });
+            </script>
+
             </div>
             <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-12 pt-8">
                     <div class="flex flex-wrap justify-center items-center text-gray-500 sm:justify-between">
@@ -145,7 +199,7 @@
             </div>
             <div class="grid grid-cols-2 gap-4 mt-8">
                 <img class="w-full rounded-lg" src="src/images/about/filmaker.jpg" alt="office content 1">
-                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="src/images/about/photographer.jpg" alt="office content 2">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="src/images/about/ChatGPT Image 29 de abr. de 2025, 12_38_49.png" alt="office content 2">
             </div>
         </div>
     </section>
@@ -369,7 +423,7 @@
                         Para quem quer automação e estratégias mais avançadas.
                     </p>
                     <div class="flex justify-center items-baseline my-8">
-                        <span class="mr-2 text-5xl font-extrabold">R$ 99,90</span>
+                        <span class="mr-2 text-5xl font-extrabold">R$ 259,90</span>
                         <span class="text-gray-500 dark:text-gray-400">/mês</span>
                     </div>
                     <ul role="list" class="mb-8 space-y-4 text-left">
@@ -392,12 +446,11 @@
                         Para empresas que buscam o máximo em automação e inteligência.
                     </p>
                     <div class="flex justify-center items-baseline my-8">
-                        <span class="mr-2 text-5xl font-extrabold">R$ 199,90</span>
+                        <span class="mr-2 text-5xl font-extrabold">R$ 559,90</span>
                         <span class="text-gray-500 dark:text-gray-400">/mês</span>
                     </div>
                     <ul role="list" class="mb-8 space-y-4 text-left">
                         <li>Chatbot personalizado com machine learning</li>
-                        <li>12 posts mensais com otimização avançada de IA</li>
                         <li>Consultoria estratégica personalizada com IA</li>
                         <li>Gestão de tráfego com otimização automática de campanhas</li>
                         <li>Suporte remoto 24/7 com assistente virtual</li>
@@ -518,7 +571,7 @@
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 State Todos os Direitos Reservados.
                 </span>
                 <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                    <a href="https://www.instagram.com/statesoft_/?hl=pt-br" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <a href="https://web.facebook.com/profile.php?id=61565731046808" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
                     </a>
                     <a href="https://www.instagram.com/statesoft_/?hl=pt-br" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
